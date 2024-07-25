@@ -3,12 +3,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "Charts",
+    name: "SpacenationCharts",
     platforms: [
         .iOS(.v13), .macOS(.v10_15), .tvOS(.v13), .watchOS(.v6)
     ],
     products: [
-        .library(name: "Charts", targets: ["Charts"])
+        .library(name: "SpacenationCharts", targets: ["Charts"])
     ],
     dependencies: [
         .package(name: "Shapes", url: "https://github.com/spacenation/swiftui-shapes.git", .upToNextMajor(from: "1.1.0"))

@@ -8,12 +8,12 @@ let package = Package(
         .iOS(.v13), .macOS(.v10_15), .tvOS(.v13), .watchOS(.v6)
     ],
     products: [
-        .library(name: "SpacenationCharts", targets: ["Charts"])
+        .library(name: "SpacenationCharts", targets: ["SpacenationCharts"])
     ],
     dependencies: [
         .package(name: "Shapes", url: "https://github.com/spacenation/swiftui-shapes.git", .upToNextMajor(from: "1.1.0"))
     ],
     targets: [
-        .target(name: "Charts",dependencies: ["Shapes"])
+        .target(name: "SpacenationCharts",dependencies: ["Shapes"])
     ]
 )
